@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84C153851F459E3D00DEFA34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C153841F459E3D00DEFA34 /* Assets.xcassets */; };
+		84C153871F459E9200DEFA34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153861F459E9200DEFA34 /* AppDelegate.swift */; };
+		84C1538A1F459EA500DEFA34 /* MetalEngine_MPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153881F459EA500DEFA34 /* MetalEngine_MPS.swift */; };
+		84C1538B1F459EA500DEFA34 /* PassThroughShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84C153891F459EA500DEFA34 /* PassThroughShader.metal */; };
+		84C1538E1F459EB700DEFA34 /* GaussianShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84C1538C1F459EB700DEFA34 /* GaussianShader.metal */; };
+		84C1538F1F459EB700DEFA34 /* MetalEngine_Gaussian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1538D1F459EB700DEFA34 /* MetalEngine_Gaussian.swift */; };
+		84C153921F459EC700DEFA34 /* MetalEngine_ImageBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153901F459EC700DEFA34 /* MetalEngine_ImageBlend.swift */; };
+		84C153931F459EC700DEFA34 /* NoiseShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84C153911F459EC700DEFA34 /* NoiseShader.metal */; };
+		84C153961F459EDA00DEFA34 /* ColorBlindnessShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84C153941F459EDA00DEFA34 /* ColorBlindnessShader.metal */; };
+		84C153971F459EDA00DEFA34 /* MetalEngine_ColorBlindnessSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153951F459EDA00DEFA34 /* MetalEngine_ColorBlindnessSimulator.swift */; };
+		84C153991F459EE900DEFA34 /* MetalEngine_Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153981F459EE900DEFA34 /* MetalEngine_Animated.swift */; };
+		84C1539F1F459EF800DEFA34 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1539A1F459EF800DEFA34 /* ImageExtensions.swift */; };
+		84C153A01F459EF800DEFA34 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84C1539B1F459EF800DEFA34 /* Info.plist */; };
+		84C153A11F459EF800DEFA34 /* MetalEngineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1539C1F459EF800DEFA34 /* MetalEngineProtocol.swift */; };
+		84C153A21F459EF800DEFA34 /* SampleBufferDisplayLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1539D1F459EF800DEFA34 /* SampleBufferDisplayLayerView.swift */; };
+		84C153A31F459EF800DEFA34 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1539E1F459EF800DEFA34 /* VideoViewController.swift */; };
+		84C153A61F459F2100DEFA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C153A41F459F2100DEFA34 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		67BF82D61D8406430076F194 /* tvOSVideoEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSVideoEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C153841F459E3D00DEFA34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = tvOSVideoEffects/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		84C153861F459E9200DEFA34 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = tvOSVideoEffects/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		84C153881F459EA500DEFA34 /* MetalEngine_MPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalEngine_MPS.swift; path = tvOSVideoEffects/MetalEngine_MPS.swift; sourceTree = SOURCE_ROOT; };
+		84C153891F459EA500DEFA34 /* PassThroughShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = PassThroughShader.metal; path = tvOSVideoEffects/PassThroughShader.metal; sourceTree = SOURCE_ROOT; };
+		84C1538C1F459EB700DEFA34 /* GaussianShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = GaussianShader.metal; path = tvOSVideoEffects/GaussianShader.metal; sourceTree = SOURCE_ROOT; };
+		84C1538D1F459EB700DEFA34 /* MetalEngine_Gaussian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalEngine_Gaussian.swift; path = tvOSVideoEffects/MetalEngine_Gaussian.swift; sourceTree = SOURCE_ROOT; };
+		84C153901F459EC700DEFA34 /* MetalEngine_ImageBlend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalEngine_ImageBlend.swift; path = tvOSVideoEffects/MetalEngine_ImageBlend.swift; sourceTree = SOURCE_ROOT; };
+		84C153911F459EC700DEFA34 /* NoiseShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = NoiseShader.metal; path = tvOSVideoEffects/NoiseShader.metal; sourceTree = SOURCE_ROOT; };
+		84C153941F459EDA00DEFA34 /* ColorBlindnessShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = ColorBlindnessShader.metal; path = tvOSVideoEffects/ColorBlindnessShader.metal; sourceTree = SOURCE_ROOT; };
+		84C153951F459EDA00DEFA34 /* MetalEngine_ColorBlindnessSimulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalEngine_ColorBlindnessSimulator.swift; path = tvOSVideoEffects/MetalEngine_ColorBlindnessSimulator.swift; sourceTree = SOURCE_ROOT; };
+		84C153981F459EE900DEFA34 /* MetalEngine_Animated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalEngine_Animated.swift; path = tvOSVideoEffects/MetalEngine_Animated.swift; sourceTree = SOURCE_ROOT; };
+		84C1539A1F459EF800DEFA34 /* ImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageExtensions.swift; path = tvOSVideoEffects/ImageExtensions.swift; sourceTree = SOURCE_ROOT; };
+		84C1539B1F459EF800DEFA34 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = tvOSVideoEffects/Info.plist; sourceTree = SOURCE_ROOT; };
+		84C1539C1F459EF800DEFA34 /* MetalEngineProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalEngineProtocol.swift; path = tvOSVideoEffects/MetalEngineProtocol.swift; sourceTree = SOURCE_ROOT; };
+		84C1539D1F459EF800DEFA34 /* SampleBufferDisplayLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleBufferDisplayLayerView.swift; path = tvOSVideoEffects/SampleBufferDisplayLayerView.swift; sourceTree = SOURCE_ROOT; };
+		84C1539E1F459EF800DEFA34 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = tvOSVideoEffects/VideoViewController.swift; sourceTree = SOURCE_ROOT; };
+		84C153A51F459F2100DEFA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = tvOSVideoEffects/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67BF82D31D8406430076F194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67BF82CD1D8406430076F194 = {
+			isa = PBXGroup;
+			children = (
+				67BF82D81D8406430076F194 /* tvOSVideoEffects */,
+				67BF82D71D8406430076F194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67BF82D71D8406430076F194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67BF82D61D8406430076F194 /* tvOSVideoEffects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67BF82D81D8406430076F194 /* tvOSVideoEffects */ = {
+			isa = PBXGroup;
+			children = (
+				67BF83041D8406990076F194 /* Demo 1 Metal Performance Shader */,
+				67BF83051D8406AD0076F194 /* Demo 2 Custom Gaussian (Slow) */,
+				67BF83061D8406BF0076F194 /* Demo 3 Image Blending */,
+				67BF83021D8406810076F194 /* Demo 4 Color Blindness Simulator */,
+				67BF83031D8406860076F194 /* Demo 5 Animated MPS */,
+				84C1539A1F459EF800DEFA34 /* ImageExtensions.swift */,
+				84C1539B1F459EF800DEFA34 /* Info.plist */,
+				84C1539C1F459EF800DEFA34 /* MetalEngineProtocol.swift */,
+				84C1539D1F459EF800DEFA34 /* SampleBufferDisplayLayerView.swift */,
+				84C1539E1F459EF800DEFA34 /* VideoViewController.swift */,
+				84C153861F459E9200DEFA34 /* AppDelegate.swift */,
+				84C153A41F459F2100DEFA34 /* Main.storyboard */,
+				84C153841F459E3D00DEFA34 /* Assets.xcassets */,
+			);
+			name = tvOSVideoEffects;
+			path = GPUVideoEffectsWithTVOS;
+			sourceTree = "<group>";
+		};
+		67BF83021D8406810076F194 /* Demo 4 Color Blindness Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				84C153941F459EDA00DEFA34 /* ColorBlindnessShader.metal */,
+				84C153951F459EDA00DEFA34 /* MetalEngine_ColorBlindnessSimulator.swift */,
+			);
+			name = "Demo 4 Color Blindness Simulator";
+			sourceTree = "<group>";
+		};
+		67BF83031D8406860076F194 /* Demo 5 Animated MPS */ = {
+			isa = PBXGroup;
+			children = (
+				84C153981F459EE900DEFA34 /* MetalEngine_Animated.swift */,
+			);
+			name = "Demo 5 Animated MPS";
+			sourceTree = "<group>";
+		};
+		67BF83041D8406990076F194 /* Demo 1 Metal Performance Shader */ = {
+			isa = PBXGroup;
+			children = (
+				84C153881F459EA500DEFA34 /* MetalEngine_MPS.swift */,
+				84C153891F459EA500DEFA34 /* PassThroughShader.metal */,
+			);
+			name = "Demo 1 Metal Performance Shader";
+			sourceTree = "<group>";
+		};
+		67BF83051D8406AD0076F194 /* Demo 2 Custom Gaussian (Slow) */ = {
+			isa = PBXGroup;
+			children = (
+				84C1538C1F459EB700DEFA34 /* GaussianShader.metal */,
+				84C1538D1F459EB700DEFA34 /* MetalEngine_Gaussian.swift */,
+			);
+			name = "Demo 2 Custom Gaussian (Slow)";
+			sourceTree = "<group>";
+		};
+		67BF83061D8406BF0076F194 /* Demo 3 Image Blending */ = {
+			isa = PBXGroup;
+			children = (
+				84C153901F459EC700DEFA34 /* MetalEngine_ImageBlend.swift */,
+				84C153911F459EC700DEFA34 /* NoiseShader.metal */,
+			);
+			name = "Demo 3 Image Blending";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67BF82D51D8406430076F194 /* tvOSVideoEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BF82E51D8406430076F194 /* Build configuration list for PBXNativeTarget "tvOSVideoEffects" */;
+			buildPhases = (
+				67BF82D21D8406430076F194 /* Sources */,
+				67BF82D31D8406430076F194 /* Frameworks */,
+				67BF82D41D8406430076F194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOSVideoEffects;
+			productName = GPUVideoEffectsWithTVOS;
+			productReference = 67BF82D61D8406430076F194 /* tvOSVideoEffects.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67BF82CE1D8406430076F194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "nthState Ltd";
+				TargetAttributes = {
+					67BF82D51D8406430076F194 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 67BF82D11D8406430076F194 /* Build configuration list for PBXProject "tvOSVideoEffects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67BF82CD1D8406430076F194;
+			productRefGroup = 67BF82D71D8406430076F194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67BF82D51D8406430076F194 /* tvOSVideoEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67BF82D41D8406430076F194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C153A61F459F2100DEFA34 /* Main.storyboard in Resources */,
+				84C153851F459E3D00DEFA34 /* Assets.xcassets in Resources */,
+				84C153A01F459EF800DEFA34 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67BF82D21D8406430076F194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C1539F1F459EF800DEFA34 /* ImageExtensions.swift in Sources */,
+				84C1538A1F459EA500DEFA34 /* MetalEngine_MPS.swift in Sources */,
+				84C153A31F459EF800DEFA34 /* VideoViewController.swift in Sources */,
+				84C153921F459EC700DEFA34 /* MetalEngine_ImageBlend.swift in Sources */,
+				84C1538E1F459EB700DEFA34 /* GaussianShader.metal in Sources */,
+				84C153991F459EE900DEFA34 /* MetalEngine_Animated.swift in Sources */,
+				84C153871F459E9200DEFA34 /* AppDelegate.swift in Sources */,
+				84C153931F459EC700DEFA34 /* NoiseShader.metal in Sources */,
+				84C1538F1F459EB700DEFA34 /* MetalEngine_Gaussian.swift in Sources */,
+				84C1538B1F459EA500DEFA34 /* PassThroughShader.metal in Sources */,
+				84C153961F459EDA00DEFA34 /* ColorBlindnessShader.metal in Sources */,
+				84C153971F459EDA00DEFA34 /* MetalEngine_ColorBlindnessSimulator.swift in Sources */,
+				84C153A21F459EF800DEFA34 /* SampleBufferDisplayLayerView.swift in Sources */,
+				84C153A11F459EF800DEFA34 /* MetalEngineProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84C153A41F459F2100DEFA34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C153A51F459F2100DEFA34 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67BF82E31D8406430076F194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		67BF82E41D8406430076F194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67BF82E61D8406430076F194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = tvOSVideoEffects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = denebtech.tvOSVideoEffects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		67BF82E71D8406430076F194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = tvOSVideoEffects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = denebtech.tvOSVideoEffects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67BF82D11D8406430076F194 /* Build configuration list for PBXProject "tvOSVideoEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BF82E31D8406430076F194 /* Debug */,
+				67BF82E41D8406430076F194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BF82E51D8406430076F194 /* Build configuration list for PBXNativeTarget "tvOSVideoEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BF82E61D8406430076F194 /* Debug */,
+				67BF82E71D8406430076F194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67BF82CE1D8406430076F194 /* Project object */;
+}
